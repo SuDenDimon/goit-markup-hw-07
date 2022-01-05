@@ -1,0 +1,44 @@
+.users {
+  margin-left: 70px;
+}
+.klients {
+   color: white;
+}
+.soc-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.footer-link:last-child {
+  margin-right: 0;
+}
+.btn-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: white;
+  background-color: rgba(255, 255, 255, 0.1); 
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-icon {
+  fill: #fff;
+  justify-content: center;
+  align-items: center;
+}
+.btn-footer:hover,
+.btn-footer:focus {
+  background-color: var(--active-color);
+  fill: white; 
+}

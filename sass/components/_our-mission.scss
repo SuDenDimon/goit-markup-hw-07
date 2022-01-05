@@ -1,0 +1,27 @@
+.second-title {
+  justify-content: center;
+  display: flex;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.7;
+  margin-bottom: 50px;
+}
+.list-mission {
+  display: flex;
+  justify-content: space-between; 
+}
+.item-mission {
+  position: relative;
+}
+.product-action {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  left: 0;
+  bottom: 0;
+  color: white;
+  background: rgba(47, 48, 58, 0.8);
+}

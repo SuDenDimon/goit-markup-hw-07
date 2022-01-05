@@ -1,0 +1,13 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  color: hsl(0, 0%, 13%);
+}
+nav,
+.links,
+.contacts,
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
