@@ -9,38 +9,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserat:wght@400;700&family=Raleway:wght@700;family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="./css/reset.css"/>    
-    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/main.min.css">
     
   </head>
   <body>
 <!-- Header of the site -->
-    <header>
+   <header>
   <div class="container">
-    <nav><a href="./index.html" class="logo">Web<span class="logo-color-black">Studio</span></a>
-        <ul  class="links">
-          <li><a href="./index.html">Студия</a></li>
-          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+    <nav class="navigation">
+      <a href="./index.html" class="navigation__link">Web<span class="logo-color-black">Studio</span></a>
+        <ul class="list-nav naigation__list-nav">
+          <li><a href="./index.html" class="list-nav__link">Студия</a></li>
+          <li><a href="./portfolio.html">Портфолио</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
     </nav>
-      <ul class="contacts">
-        <li><a class="icon" href="mailto:info@devstudio.com">
+    <ul class="contacts">
+      <li>
+        <a class="icon" href="mailto:info@devstudio.com">
           <svg class="envelope" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope">
-                </use>
-              </svg>info@devstudio.com</a></li>
-        <li><a class="icon" href="tel:+380961111111">
+            <use href="./images/icons.svg#icon-envelope">
+            </use>
+          </svg>info@devstudio.com
+        </a>  
+      </li>
+      <li class="icon-vector">
+        <a class="icon" href="tel:+380961111111">
           <svg class="vector" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone">
-                </use>
-              </svg>+38 096 111 11 11</a></li>
-      </ul>
+            <use href="./images/icons.svg#icon-smartphone">
+            </use>
+          </svg>
+          +38 096 111 11 11
+        </a>
+      </li>
+    </ul>
   </div>
 </header>
+
     <main>
       <section class="section">
-        <h1 class="hidden-elem">Портфолио</h1>
+        <h1 class="section__hidden-elem">Портфолио</h1>
           <div class="container">
               <ul class="sub-title-buttons">
                 <li><button type="button" class="button-our">Все</button></li>
@@ -49,6 +57,7 @@
                 <li><button type="button" class="button-design">Дизайн</button></li>
                 <li><button type="button" class="button-market">Маркетинг</button></li>
               </ul>
+              
               <ul class="images">
                 <li class="item-img">
                   <div class="thumb">
@@ -148,7 +157,7 @@
   <footer class="footer">
       <div class="footer-container">
         <div class="footer-one">
-          <a href="" class="logo">Web<span class="logo-color">Studio</span></a>
+          <a href="" class="navigation__link">Web<span class="logo-color">Studio</span></a>
           <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
           <ul>
             <li><a href="mailto:info@example.com" class="communication">info@example.com</a></li>

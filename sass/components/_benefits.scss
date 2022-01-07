@@ -1,12 +1,12 @@
 .section {
   padding: 94px 0;
-}
-.hidden-elem {
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  margin-top: -1px;
+  &__hidden-elem {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+    margin-top: -1px;
+  }
 }
 .container {
   padding: 0 15px;
@@ -14,44 +14,38 @@
   margin: 0 auto;
 } 
 .list-benefits {
-  display: flex;
+  @extend %position-center;
   box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
   margin-top: 94px;
+  &__item {
+    display: block;
+    width: 270px;
+    height: 251px;
+    margin-right: 30px;
+  &__item:last-child {
+    margin-right: 0%;
+    }
+  }
 }
-.item {
-  display: block;
-  width: 270px;
-  height: 251px;
-  justify-content: center;
-  align-items: center;
-  margin-right: 30px;
-}
-.item:last-child {
-  margin-right: 0%;
-}
-.item-anthena {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.item__wrapper-icons{
+  @extend %position-center;
   width: 270px;
   height: 120px;
-  background-color: #F5F4FA;
+  background-color: $milk;
   border-radius: 4px;
   margin-bottom: 30px;
 }
-.sub-title {
-  padding-right: 20px;
-  font-weight: 400px;
-  font-size: 14px;
-  line-height: 1.4;
-  color: #757575;
-}
-.benefits {
+.item__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+.item__content {
+  padding-right: 20px;
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: $gray;
 }

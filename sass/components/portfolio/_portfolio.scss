@@ -1,5 +1,4 @@
-
-.hidden {
+.section__hidden-elem {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.7;
@@ -11,7 +10,6 @@
   font-size: 14px;
   line-height: 1.7;
 }
-
 .address,
 .communication {
   font-family: Roboto;
@@ -19,24 +17,24 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
-  color: #ffffff;
-  background-color: #2f303a;
+  color: $color;
+  background-color: $dark;
 }
 .communication {
-  color: rgba(255, 255, 255, 0.6);
-  background-color: #2f303a;
+  color: $visual-gray;
+  background-color: $dark;
 }
 button {
-  background: #F5F4FA;
+  background: $milk;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 button:hover, button:focus {
   color: var(--primary-bg-color);
-  background: #188CE8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background: $min-blu;
+  box-shadow: 0px 4px 4px $light-black;
   border-radius: 4px;
-  color: #eee;
+  color: $white-gray;
 }
 .sub-title-buttons {
   font-weight: 500;
@@ -59,14 +57,14 @@ button:hover, button:focus {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.9;
-  color: #757575;
+  color: $gray;
 }
 .icon:hover
 .icon:focus
 .icon:focus use,
 .icon:hover use {
-    color: blue;
-    fill: blue;
+    color: $blu;
+    fill: $blu;
 } 
 .contacts li:first-child a {
   margin-left: 0;
@@ -81,7 +79,7 @@ button:hover, button:focus {
 .last-section {
   max-width: 1600px;
   margin: 0 auto;
-  background: #F5F4FA;
+  background: $milk;
   padding-bottom: 94px;
   padding-top: 94px;
 }
@@ -138,7 +136,7 @@ button:hover, button:focus {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: $color;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
@@ -148,7 +146,7 @@ button:hover, button:focus {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(33, 150, 243, 0.9);
+  background: $visual-blu;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* opacity: 1; */
@@ -165,7 +163,7 @@ button:hover, button:focus {
 .images > .item-img { 
   margin-right: 30px;
   margin-bottom: 30px;
-  border-bottom: 1px solid #eee; 
+  border-bottom: 1px solid $white-gray; 
   position: relative;
 }
 .item-img:hover,
@@ -188,7 +186,7 @@ button:hover, button:focus {
   padding-bottom: 20px;   
 }
 .envelope {
-  fill: #757575;
+  fill: $gray;
   margin-right: 10px;
 }
 .envelope:hover,
@@ -197,7 +195,7 @@ button:hover, button:focus {
 }
 .vector {
   margin-right: 10px;
-  fill: #757575;
+  fill: $gray;
 }
 .vector:hover, 
 .vector:focus {
@@ -208,15 +206,11 @@ button:hover, button:focus {
   width: 270px;
   display: block;
 }
-
-
 .btn-clients {
-  display: flex;
+  @extend %position-center;
   width: 170px;
   height: 92px;
-  justify-content: center;
-  align-items: center;
-  fill: #AFB1B8;
+  fill: $light-gray;
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -225,15 +219,6 @@ button:hover, button:focus {
 .btn-clients:focus,
 .btn-clients:hover use,
 .btn-clients:focus use {
-  color: #188ce8;
-  fill: #188ce8;
+  color: $min-blu;
+  fill: $min-blu;
 }
-.section-section {
-  background-color: #F5F4FA;
-  padding: 94px 0;
-  max-width: 1600px;
-  margin: 0 auto;
-}
-/* Модальное окно */
-
-

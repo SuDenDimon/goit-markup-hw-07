@@ -6,20 +6,20 @@
 .logo-icon {
   width: 170px;
   height: 92px;
-  fill: #AFB1B8;
-  border: 1px solid #AFB1B8;
+  fill: $light-gray;
+  border: 1px solid $light-gray;
   border-radius: 4px;
   margin-right: 30px;
 }
- .logotipes:hover,
- .logotipes:focus {
-  fill: #2196F3; 
-  background-color: white;
- }
+.logotipes:hover,
+.logotipes:focus {
+fill: $light-blu; 
+background-color: $one-color;
+}
 
- .logo-icon:hover,
- .logo-icon:focus { 
-  border: 1px solid #2196F3;
+.logo-icon:hover,
+.logo-icon:focus { 
+border: 1px solid $light-blu;
 }
 .logo-icon:last-child {
   margin-right: 0;
