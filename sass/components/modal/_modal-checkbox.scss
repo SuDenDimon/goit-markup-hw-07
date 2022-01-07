@@ -2,10 +2,10 @@
   display: flex;
   padding-left: 12px;
   font-size: 14px;
-  color: #757575;
+  color: $gray;
 }
 .policy-box a{
-  color: #2196F3;
+  color: $light-blu;
   display: flex;
   align-items: center;
 }
@@ -23,24 +23,24 @@
   padding-right: 7px;
 }
 .policy-checkbox:checked + .policy-box::before {
-  background-color: #2196F3;
+  background-color: $light-blu;
   background-image: url(../images/Vector-4.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 .policy-checkbox:focus + .policy-box::before {
-  outline: 2px solid #2196F3;
+  outline: 2px solid $light-blu;
 }
 .policy-box::before {
   content: '';
   width: 16px;
   height: 16px;
-  border: 1px solid#212121;
+  border: 1px solid $main-black;
   border-radius: 2px;
 }
 .policy-box a {
-  color: #188ce8;
+  color: $min-blu;
   text-decoration: underline;
 }
 .user-link {

@@ -20,18 +20,18 @@
   transform: translate(-50%, -50%);
   min-height: 580px;
   min-width: 528px;
-  background-color: white;
+  background-color: $one-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 .button-modal {
   position: absolute;
-  border: 1px solid #2f303a;
+  border: 1px solid $dark;
   width: 30px;
   height: 30px;
   top: 8px;
   right: 8px;
-  background: #FFFFFF;
+  background: $color;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box; 
   border-radius: 50%;
@@ -40,8 +40,8 @@
   position: absolute;
   top: 16px; 
   right: 16px;
-  fill: #212121;
-  stroke: black;
+  fill: $main-black;
+  stroke: $black;
   z-index: 5;
 }
 .icon-close.is-hidden {
@@ -56,5 +56,5 @@
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: $main-black;
 }
