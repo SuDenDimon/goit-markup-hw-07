@@ -10,14 +10,10 @@
   height: 44px;
   border-radius: 50%;
   fill: $light-gray;
-  transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition;
   }
   &__icon {
-  transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition;
   }
 }
 .social-link__btn:hover,

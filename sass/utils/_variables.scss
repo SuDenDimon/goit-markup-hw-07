@@ -27,4 +27,13 @@ $black: black;
   justify-content: center;
   align-items: center;
 }
-
+%family-roboto-fs-norm-fw-norm {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+}
+%transition {
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

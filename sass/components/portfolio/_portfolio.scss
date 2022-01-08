@@ -12,9 +12,7 @@
 }
 .address,
 .communication {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+  @extend %family-roboto-fs-norm-fw-norm;
   font-size: 14px;
   line-height: 1.7;
   color: $color;
@@ -199,7 +197,7 @@ button:hover, button:focus {
 }
 .vector:hover, 
 .vector:focus {
-  fill: var(--active-color);
+  fill: $light-blu;
 }
 
 .item-anthena .benefits .sub-title {
@@ -211,9 +209,7 @@ button:hover, button:focus {
   width: 170px;
   height: 92px;
   fill: $light-gray;
-  transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition;
 }
 .btn-clients:hover,
 .btn-clients:focus,

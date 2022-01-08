@@ -1,7 +1,5 @@
 .logo-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %position-center;
 }
 .logo-icon {
   width: 170px;
