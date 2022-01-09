@@ -37,11 +37,11 @@ $black: black;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@mixin font ($fs, $fw: 400, $fsz, $lh){
+@mixin font ($fs, $fsz, $lh, $fw: 400){
   font-style: $fs;
-  font-weight: $fw;
-  font-size: $fsi;
-  line-height: $lh;   
+  font-size: $fsz;
+  line-height: $lh;
+  font-weight: $fw;   
 }
 @mixin display ($fl, $sb, $center) {
     display: $fl;

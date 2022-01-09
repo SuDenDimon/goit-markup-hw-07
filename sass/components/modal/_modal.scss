@@ -50,10 +50,9 @@
 .modal-text {
   @include display (inline-flex, center, center);
   padding: 40px 40px 12px 40px;
-  @include font (normal, 25px, 400, 14px);
-  // font-weight: bold;
-  // font-size: 20px;
-  // line-height: 23px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
   letter-spacing: 0.03em;
   color: $main-black;
 }
