@@ -1,0 +1,16 @@
+@mixin font ($fs, $fsz, $lh, $fw: 400){
+  font-style: $fs;
+  font-size: $fsz;
+  line-height: $lh;
+  font-weight: $fw;   
+}
+@mixin display ($fl, $sb, $center) {
+  display: $fl;
+  justify-content: $sb;
+  align-items: $center;
+}
+@mixin butWids ($width) {
+  width: $width;
+  height: 38px;
+  border-radius: 4px;
+}

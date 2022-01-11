@@ -22,29 +22,4 @@ $light-black: #00000026;
 $main-black: #212121;
 $black: black;
 
-%position-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-%family-roboto-fs-norm-fw-norm {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-}
-%transition {
-  transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-@mixin font ($fs, $fsz, $lh, $fw: 400){
-  font-style: $fs;
-  font-size: $fsz;
-  line-height: $lh;
-  font-weight: $fw;   
-}
-@mixin display ($fl, $sb, $center) {
-    display: $fl;
-    justify-content: $sb;
-    align-items: $center;
-}
+

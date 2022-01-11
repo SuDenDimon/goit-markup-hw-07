@@ -1,3 +1,51 @@
+.footer {
+  padding: 60px 0;
+  background: $dark;
+  max-width: 1600px;
+  margin: 0 auto;
+ }
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-one {
+  margin-left: 215px;
+}
+.users {
+  margin-left: 70px;
+}
+.klients {
+   color: $one-color;
+}
+.soc-footer {
+  @extend %position-center;
+  margin-top: 20px;
+}
+.footer-link {
+  @extend %position-center;
+  margin-right: 10px;
+  &:last-child {
+  margin-right: 0;
+  }
+}
+.btn-footer {
+  @extend %position-center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: $one-color;
+  background-color: rgba(255, 255, 255, 0.1); 
+  @extend %transition;
+  &:hover,
+  &:focus {
+    background-color: $light-blu;
+    fill: $one-color; 
+  }
+}
+.footer-icon {
+  fill: $color;
+  @extend %position-center;
+}
 .sub-footer {
   margin-left: 130px;
 }
