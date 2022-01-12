@@ -4,6 +4,9 @@
 }
 .social-link {
   margin-right: 10px;
+  &:last-child {
+  margin-right: 0;
+  }
   &__btn {
   @extend %position-center;
   width: 44px;
@@ -15,14 +18,11 @@
   &__icon {
   @extend %transition;
   }
-}
-.social-link__btn:hover,
-.social-link__btn:focus, 
-.social-link__icon:hover,
-.social-link__icon:focus {
+  &__btn:hover,
+  &__btn:focus, 
+  &__icon:hover,
+  &__icon:focus {
   background-color: $light-blu;
   fill: $one-color;
-}
-.social-link:last-child {
-  margin-right: 0;
+  }
 }

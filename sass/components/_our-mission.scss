@@ -5,20 +5,20 @@
   line-height: 1.7;
   margin-bottom: 50px;
 }
-.list-mission {
+.mission-list {
   display: flex;
   justify-content: space-between; 
-}  
-.item-mission {
+  &__item {
   position: relative;
-  &__product-action {
-    position: absolute;
-    @extend %position-center;
-    width: 100%;
-    height: 70px;
-    left: 0;
-    bottom: 0;
-    color: $one-color;
-    background: rgba(47, 48, 58, 0.8);
+}
+  &__text {
+  position: absolute;
+  @extend %position-center;
+  width: 100%;
+  height: 70px;
+  left: 0;
+  bottom: 3px;
+  color: $one-color;
+  background: rgba(47, 48, 58, 0.8);
   }
 }
